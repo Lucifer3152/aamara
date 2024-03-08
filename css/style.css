@@ -5953,7 +5953,7 @@ button {
     }
 
     .about-bg-2 {
-        top: 80px;
+        top: 60px;
     }
 
     @media all and (min-width: 1920px) {
@@ -5964,7 +5964,7 @@ button {
 
     @media only screen and (max-width: 995px) {
         .about-bg-2 {
-            top: 70px;
+            top: 7zz0px;
         }
     }
 
@@ -6549,7 +6549,7 @@ button {
     a:visited,
     a:active,
     a:focus {
-        color: #fff;
+        color: #000000;
     }
 
     p a,
