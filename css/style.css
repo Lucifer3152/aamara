@@ -55,6 +55,11 @@
   41. blog
 */
 
+         
+
+ 
+
+
 #splash-screen {
     position: fixed;
     top: 0;
@@ -1947,7 +1952,7 @@ a.link-effect {
     text-align: center;
     text-transform: uppercase;
     color: #e0e0e0;
-    line-height: 1;
+    line-height: 2;
     letter-spacing: -0.04em;
     margin: 4px 0 0 0;
     padding: 0 20px;
@@ -7748,15 +7753,42 @@ button {
         border: none;
     }
 
+    .btn-grad {
+        background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%);
+        margin: 10px;
+        padding: 15px 45px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;            
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        display: block;
+      }
+    
+      .btn-grad:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+      }
+
     .reservation-button-nav-bar {
+        background-image: linear-gradient(to right, #8e9eab 0%, #eef2f3  51%, #8e9eab  100%);
+        margin: 10px;
+        padding: 15px 45px;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
         position: relative;
         display: block;
-        width: 350%;
+        width: 400%;
         height: 38px;
         line-height: 35.5px;
         margin: 0;
         padding: 0;
-        background: #5f5f5f;
         cursor: pointer;
         font-family: 'Playfair Display', serif;
         font-size: 15px;
@@ -8158,6 +8190,11 @@ button {
     form {
         margin: 0;
         padding: 0;
+    }
+
+    #reservation-button
+    {
+        cursor:pointer;
     }
 
     #form-3 input {
@@ -8669,7 +8706,7 @@ button {
             bottom: auto;
             padding: 50px 0;
             background: #111;
-            display: block;
+            display: none;
             visibility: visible;
         }
     }
@@ -8677,6 +8714,7 @@ button {
     @media only screen and (max-width: 768px) {
         .reservation-wrapper {
             padding: 20px 0;
+            display: none;
         }
     }
 
