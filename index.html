@@ -56,10 +56,9 @@
                             <!-- logo dark start -->
                             <img alt="Logo" class="logo-dark" src="img/logo-dark.png">
                             <!-- logo dark end -->
-                            <button type="submit" class="logo-dark reservation-button-nav-bar" data-toggle="modal" data-target="#reservation-modal">Reserve</button>
+                            <!-- <button type="submit" class="logo-dark reservation-button-nav-bar" data-toggle="modal" data-target="#reservation-modal">Reservations</button> -->
 
-                            <!-- <img href="https://reservations.tangohq.com/reservation/new/92bcc4d6-d59b-427a-b6dd-47766d5168fb" alt="Logo" style="margin-left: 180px;height: 45px;" class="logo-dark" src="img/logo-reservation.png"> -->
-
+                            <img data-toggle="modal" data-target="#reservation-modal" class="logo-dark" alt="Logo" style="margin-left: 140px;height: 45px;" src="img/logo-reservation.png">
                         </a>
                         <!-- logo mobile end -->
                     </div>
@@ -321,66 +320,18 @@
     </div>
     <!-- home end -->
     <!-- reservation form start -->
-    <div class="reservation-wrapper fadeIn-element">
-        <!-- container start -->
-        <div class="container">
-            <div class="extra-margin-container">
+     <div class="reservation-wrapper hide-reservation-button">
+        <div class="container" >
+            <div class="extra-margin-container" >
                 <div class="reservation-inner clearfix">
-                    <form action="reservation.php" id="form-2" method="post" name="send">
-                        <!-- <div class="col-1 c-1">
-                            <div class="input-wrapper">
-                                <label>Date</label>
-                                <div class="input-inner">
-                                    <input class="requiredField-r date form-control input datepicker" id="date" name="date" placeholder="Date" type="text">
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- <div class="col-1 c-2">
-                            <div class="input-wrapper">
-                                <label>Date</label>
-                                <div class="input-inner input-inner-email">
-                                    <input class="requiredField-r email" id="email-r" name="email" placeholder="Email" type="text">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-2 c-3">
-                            <div class="select-wrapper">
-                                <label>Time</label>
-                                <div class="select-inner">
-                                    <select class="requiredField-r time select2 select" id="time" name="time">
-                                        <option class="" value="" selected="selected">Time</option>
-                                        <option value="10:00 a.m.">10:00 a.m.</option>
-                                        <option value="11:00 a.m.">11:00 a.m.</option>
-                                        <option value="12:00 p.m.">12:00 p.m.</option>
-                                        <option value="1:00 p.m.">1:00 p.m.</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-2 c-4">
-                            <div class="select-wrapper">
-                                <label>Persons</label>
-                                <div class="select-inner">
-                                    <select class="requiredField-r persons select2 select" id="persons" name="persons">
-                                        <option value="" selected="selected">Persons</option>
-                                        <option value="1 Person">1 Person</option>
-                                        <option value="2 Persons">2 Persons</option>
-                                        <option value="3 Persons">3 Persons</option>
-                                        <option value="4 Persons">4 Persons</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div> -->
+                    <div action="reservation.php" id="form-2" method="post" name="send">
                         <div class="col-3 c-6">
                             <button type="submit" class="reservation-button" data-toggle="modal" data-target="#reservation-modal">Reserve</button>
                         </div>
-
-                    </form>
-                    
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- container end -->
     </div>
     <!-- news modal 1 start -->
     <div aria-hidden="true" class="news-modal modal fade" id="reservation-modal" role="dialog" tabindex="-1">
@@ -430,16 +381,15 @@
                                 
                                 <!-- section txt start -->
                                 <p class="text">
-                                    <br>Please be informed of our following dine in protocols: 
-                                    <br><br>
-                                    - Your table is reserved up to 1.5 hours from your reservation time.<br>
-                                    - In our effort to provide you with a prompt service, we kindly ask that your entire group arrives on time. Seats won't be held if late over 15 minutes due to next reservations.<br>
-                                    - There is a $3 plating fee per head for cakes/dessert should you wish to bring your own.
-                                    - Please note, changes of time and party size are subject to availability. 
-                                    - 2 hours advance cancellation policy.
-                                    - Party Decorations are subject to management approval.<br>
-                                    - For quick and efficient payment process, if your group requires the bill to be split; it can be done to maximum of 4 bills.<br>
-                                    - An automatic 18% gratuity will be applied to party of 5 and above.<br>
+                                    <br>
+                                    - We have a 15 minute grace period. Please call us if you are running later than 15 minutes after your reservation time.<br>
+                                    - We may contact you about this reservation, so please ensure your email and phone number are up to date.<br>
+                                    - Your table will be reserved for 1 hour 30 minutes for parties of up to 2; 2 hours for parties of up to 6; and 2 hours 30 minutes for parties of 7+.<br>
+                                    - Please note, changes of time and party size are subject to availability. <br>
+                                    - A gratuity of 18% will be added to the bill for parties of 6 or more. We cannot accommodate split bills, however multiple payments are accepted.<br>
+                                    - When booking reservations please include children & infants in the party size.<br>
+                                    - Kindly call us during business hours to request an increase in party hours.<br>
+                                    - For parties of 10+, please email us at <a  href="mailto:info@aamara.ca">aamaratoronto@gmail.com</a>.
                                 </p>
                                 
                                 <!-- section txt end -->
@@ -2335,11 +2285,12 @@ of the air after a rain shower.</p>
                                 <a class="ion-social-twitter" href="#"><span>Twitter</span></a>
                             </li>-->
                             <li>
-                                <a class="ion-social-facebook" href="#"><span>Facebook</span></a>
-                            </li>
-                            <li>
                                 <a class="ion-social-instagram" href="https://www.instagram.com/aamaratoronto?igsh=bXo1dmMzMGFhYzR6"><span>Instagram</span></a>
                             </li>
+                            <li>
+                                <a class="ion-social-facebook" href="https://www.facebook.com/profile.php?id=61557038078613&mibextid=ZbWKwL"><span>Facebook</span></a>
+                            </li>
+                            
                         </ul>
                     </div>
                     <!-- social icons end -->
